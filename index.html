@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TechOrb IT Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+	<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="first-container">
+        <header>
+            <div class="container-1">
+                
+                <div  class="brand-title">TechOrb Solutions</div>
+                <nav class="navbar">
+                    
+                    <div class="navbar-links">
+                        <ul class="nav-menu">
+                            <li><a href="#home">Home</a></li>
+    
+                            <li class="services-dropdown">
+                                <a href="about.html">About</a>
+                                <div class="services-dropdown-content">
+                                    <a href="about.html">About Us<i class="down"></i></a>
+                                    <a href="#">Clients</a>
+                                </div>
+                            </li>
+    
+                            <li class="services-dropdown"> <a href="#services">Services<i class="down"></i> </a>
+                                
+                                <div class="services-dropdown-content">
+                                        <a href="services/Enterprise-security.html" id="">Enterprise Security</a>
+                                        <a href="services/Enterprise-technology.html" id="">Enterprise Technology</a>
+                                        <a href="services/Infrastructure-services.html" id="">Infrastructure Services</a>
+                                        <a href="services/Managed-it-services.html" id="">Managed IT Services</a>
+                                        <a href="services/strategy-analytics.html" id="">Strategy Analytics</a>
+                                </div>
+                             </li>
+                             <!-- <li><a href="#Industries">Industries</a></li>  -->
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                
+                    <a href="#" class="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>     
+                </nav>
+        </header>
+    
+        <!-- Hero Section -->
+        <section id="home" class="home-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Empowering businesses with advanced <br> technical expertise and personalized<br> solutions.</h1>
+                    <p>Let's elevate your digital experience together.</p>
+                    <a href="#services" class="btn-primary">Explore Our Services</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+   
+   <!-- Services Section -->
+<section id="services" class="services-section">
+
+          <div class="services-all-div">
+            <div class="service-headline">
+                <h2>Effective MSPs enable companies to focus on their core objectives while improving
+                    the quality and <br> reliability of their IT requirements.</h2>
+               </div>
+    
+                    <div class="carousel-container">
+                        <div class="carousel-content">
+                            <!-- Slide 1 -->
+                            <div class="carousel-slide">
+                                <div class="service-box">
+                                    <img src='images/security.jpg' alt="" class="background-image">
+                                    <h2>ENTERPRISE SECURITY</h2>
+                                    <p>Protect your business with cutting-edge security solutions designed to safeguard your data, 
+                                        infrastructure, and operations. From threat detection to secure network management,
+                                        we ensure your enterprise is always one step ahead of cyber risks. 
+                                         Stay secure, stay ahead.</p>
+                                        <a href="services/Enterprise-security.html" class="know-more">Know more</a>
+                                </div>
+    
+                                <div class="service-box">
+                                    <img src='images/e-tech.jpg' alt="" class="background-image">
+                                    <h2>ENTERPRISE TECHNOLOGY</h2>
+                                    <p>Empower your business with advanced technology solutions tailored to drive innovation and efficiency. 
+                                        From cloud computing to custom software development, we deliver tech strategies that streamline 
+                                        operations and enhance performance, setting your enterprise up for long-term success...</p>
+                                        <a href="services/Enterprise-technology.html" class="know-more">Know more</a>
+                                </div>
+    
+                                <div class="service-box">
+                                    <img src='images/strategy.jpg' alt="" class="background-image">
+                                    <h2>STRATEGY ANALYTICS</h2>
+                                    <p>Unlock data-driven insights to propel your business forward. Our strategy analytics services
+                                        help you make informed decisions with real-time data, predictive analysis, 
+                                        and custom reports. Turn information into action and drive growth with confidence...</p>
+                                        <a href="services/strategy-analytics.html" class="know-more">Know more</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 2 -->
+                            <div class="carousel-slide">
+                                <div class="service-box">
+                                    <img src='images/infa.jpg' alt="" class="background-image">
+                                    <h2>INFRASTRUCTURE SERVICES</h2>
+                                    <p>Build a solid foundation for your business with robust infrastructure solutions that optimize performance and scalability. 
+                                        We provide everything from server management to network architecture, ensuring your IT backbone is secure, 
+                                        efficient, and ready for growth.</p>
+                                        <a href="services/Infrastructure-services.html" class="know-more">Know more</a>
+                                </div>
+    
+                                <div class="service-box">
+                                    <img src='images/manged.jpg' alt="" class="background-image">
+                                    <h2>Managed IT Services</h2>
+                                    <p>Focus on your business while we take care of your IT. Our managed services provide proactive monitoring, 
+                                        support, and maintenance, ensuring your systems run smoothly 24/7. We handle the tech, 
+                                        so you can handle what matters most—growing your business...</p>
+                                        <a href="services/Managed-it-services.html" class="know-more">Know more</a>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Navigation dots -->
+                        <div class="carousel-dots">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                        </div>
+                    </div>
+          </div>
+
+</section>
+
+
+
+    <!--Questiions for the users-->
+    <section class="it-solutions">
+        <div class="content" id="question1">
+            <h1>Transformational IT Solutions for your Business</h1>
+            <p>It is more important than ever to ensure your business has the right technology to drive it into the future.</p>
+            <h3><strong>1. What is your industry?</strong> <span class="question-info">Question 1 of 2</span></h3>
+            <div class="industry-options">
+                <button class="option" onclick="showQuestionTwo()">Healthcare</button>
+                <button class="option" onclick="showQuestionTwo()">Transportation & Logistics</button>
+                <button class="option" onclick="showQuestionTwo()">Trading & Manufacturing</button>
+                <button class="option" onclick="showQuestionTwo()">Financial & Insurance Services</button>
+                <button class="option" onclick="showQuestionTwo()">Customer & Retail</button>
+                <button class="option" onclick="showQuestionTwo()">Construction</button>
+                <button class="option" onclick="showQuestionTwo()">Technology, Media, and Telecoms</button>
+                <button class="option" onclick="showQuestionTwo()">Oil & Gas and Energy</button>
+                <button class="option" onclick="showQuestionTwo()">Education</button>
+            </div>
+        </div>
+
+        <div class="content" id="question2" style="display: none;">
+            <h1>Transformational IT Solutions for your Business</h1>
+            <p>Answer two questions and put our thinking to work on your changes.</p>
+            <h3><strong>2. What is your business need?</strong> <span class="question-info">Question 2 of 2</span></h3>
+            <div class="industry-options">
+                <button class="option">Managed Cyber Security</button>
+                <button class="option">Disaster Recovery and Backup</button>
+                <button class="option">ERP</button>
+                <button class="option">Remote IT Support</button>
+                <button class="option">On Site IT Support</button>
+                <button class="option">IT Consultancy</button>
+                <button class="option">Productivity Apps</button>
+                <button class="option">Audit & Automation</button>
+                <button class="option">Data Center Services</button>
+                <button class="option">Business Intelligence</button>
+                <button class="option">eSpace</button>
+            </div>
+            <button class="back-button" onclick="showQuestionOne()">Back</button>
+        </div>
+
+        <div class="image">
+            <img src="images/solutions.jpg" alt="Person working on IT solutions">
+        </div>
+        
+    </section>
+         
+
+   <div class="webranking-body">
+        <div class="webranking-body2">
+            <section class="stats-section">
+                <div class="stat-item">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/customer-satisfaction.png" alt="Customer Satisfaction">
+                    </div>
+                    <div class="stat-value">98%</div>
+                    <div class="stat-label">CUSTOMER SATISFACTION</div>
+                </div>
+        
+                <div class="stat-item">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/internet.png" alt="Network Availability">
+                    </div>
+                    <div class="stat-value">99.98%</div>
+                    <div class="stat-label">NETWORK AVAILABILITY</div>
+                </div>
+        
+                <div class="stat-item">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/time-management.png" alt="On Time Resolution">
+                    </div>
+                    <div class="stat-value">97%</div>
+                    <div class="stat-label">ON TIME RESOLUTION</div>
+                </div>
+        
+                <div class="stat-item">
+                    <div class="icon">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/planner.png" alt="On Time Project Delivery">
+                    </div>
+                    <div class="stat-value">99%</div>
+                    <div class="stat-label">ON TIME PROJECT DELIVERY</div>
+                </div>
+            </section>
+        </div>
+   </div>
+   
+   <!--Pathers-->
+
+   <section class="partners">
+    <div class="partner-category">
+        <h2>International partners</h2>
+        <div class="partners-grid">
+            <div class="partner">
+                <img src="company-logo.png" alt="company name">
+            </div>
+            <div class="partner">
+                <img src="company-logo.png" alt="company name">
+            </div>
+            <div class="partner">
+                <img src="company-logo.png" alt="company name">
+            </div>
+            <div class="partner">
+                <img src="company-logo.png" alt="company name">
+            </div>
+            <div class="partner">
+                <img src="company-logo.png" alt="company name">
+            </div>
+        </div>
+    </div>
+
+    <div class="partner-category">
+        <h2>Connectivity partners</h2>
+        <div class="partners-grid">
+            <div class="partner">
+                <img src="isn-logo.png" alt="c">
+            </div>
+            <div class="partner">
+                <img src="coollink-logo.png" alt="c">
+            </div>
+            <div class="partner">
+                <img src="brainshare-logo.png" alt="c">
+            </div>
+            <div class="partner">
+                <img src="bcn-logo.png" alt="c">
+            </div>
+            <div class="partner">
+                <img src="cenovus-logo.png" alt="c">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section company-info">
+                <img src="TechOrb-logo.png" alt="TechOrb Logo" class="logo">
+                <address>
+                     <br>
+                     <br>
+                    Lagos, Nigeria.
+                </address>
+                <a href="mailto:solutions@netcomafrica.com">TechOrbITSolutions.com</a> <br>
+                <a href="tel:+23412718888">+234.8.8888.8888</a>
+            </div>
+            <div class="footer-section navigation">
+                <h4>NAVIGATION</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    
+                    <li><a href="#">News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-section services">
+                <h4>SERVICES</h4>
+                <ul>
+                    <li><a href="services/Enterprise-security.html">Enterprise Security</a></li>
+                    <li><a href="services/Enterprise-technology.html">Enterprise Technology</a></li>
+                    <li><a href="services/Infrastructure-services.html">Infrastructure Services</a></li>
+                    <li><a href="services/Managed-it-services.html">Managed IT Services</a></li>
+                    <li><a href="services/strategy-analytics.html">Strategy Analytics</a></li>
+                </ul>
+            </div>
+            <div class="footer-section certifications">
+                <img src="tl9000-logo.png" alt="Certifications" class="certifications-logo">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <!-- <div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div> -->
+            <!-- <p>© 2020 Netcom Africa Limited. All rights reserved. | <a href="#">Terms & Conditions</a></p> -->
+        </div>
+        <p class="last-p">© 2024 TechOrbITSolutions Limited. All rights reserved. | <a href="#">Terms & Conditions</a></p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+    
+</html>

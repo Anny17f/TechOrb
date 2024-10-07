@@ -1,0 +1,1337 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(59, 57, 57); /* Background image */
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Adjust spacing between navigation items */
+}
+
+.nav-menu ul li {
+    position: relative;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    color: #ffffff; /* Optional hover effect */
+    transform: scale(1.2);
+}
+
+/* Dropdown content hidden initially */
+.services-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(61, 57, 57);
+    min-width: 200px;
+    top: 100%; /* Positioned below the Services menu item */
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.services-dropdown-content a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.services-dropdown-content a:hover {
+    background-color: rgb(110, 110, 110); /* Highlight on hover */
+}
+
+/* Display the dropdown on hover */
+.nav-menu ul li.dropdown:hover .services-dropdown-content {
+    display: block;
+}
+
+
+/* Dropdown content hidden initially */
+.about-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(61, 57, 57);
+    min-width: 200px;
+    top: 100%; /* Positioned below the About menu item */
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.about-dropdown-content a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.about-dropdown-content a:hover {
+    background-color: #555; /* Highlight on hover */
+}
+
+/* Display the dropdown on hover for About */
+.nav-menu ul li.dropdown:hover .about-dropdown-content {
+    display: block;
+}
+
+/*upper image design*/
+.enterprise-security{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+
+    background-image: url('../images/enter-security3.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    /* background-position: center; */
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    font-size: 16px;
+    padding:2rem 0;
+    color: #333;
+    background-color: #c0bbbb;
+    line-height: 1.5;
+}
+
+/*Cyber security*/
+
+
+.container-1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #334f84;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.image-section img {
+    max-width: 450px; /* Adjust the size to your image's actual width */
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-section {
+    max-width: 600px;
+    margin-left: 30px;
+}
+
+.text-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.text-section ul {
+    list-style-type: none;
+}
+
+.text-section ul li {
+    font-size: 1rem;
+    padding: 5px 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.text-section ul li::before {
+    content: '✔️';
+    color: #334f84;
+    margin-right: 10px;
+}
+
+/*Disater recovery backup*/
+.container-3 {
+    
+    
+    margin-top: 50px;
+    text-align: left;
+    background-color: #c0bbbb;
+    padding: 2.5rem 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #334f84;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.content-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 30px;
+}
+
+.image-section-1 img {
+    max-width: 450px; /* Adjust the size to your image's actual width */
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-section-1 {
+    /* max-width: 600px; */
+    margin-left: 30px;
+}
+
+.text-section-1 ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.text-section-1 ul li {
+    font-size: 1rem;
+    padding: 10px 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.text-section-1 ul li::before {
+    content: '✔️';
+    color: #334f84;
+    margin-right: 10px;
+}
+
+.text-section-1 p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.logo-section {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-section img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+}
+
+/*footer*/
+
+ .footer {
+    background-color: #343030;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+}
+
+.company-info address, .company-info a {
+    display: block;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.logo-1 {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ul li {
+    margin: 10px 0;
+} */
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    
+}
+
+.certifications-logo {
+    max-width: 150px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.footer p{
+    text-align: center;
+}
+
+/*Enterprise resouces planning design*/
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+.header-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    color: #004080;
+    font-size: 18px;
+}
+
+/* ERP Section */
+.erp-section {
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.erp-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.erp-container h2 {
+    color: black;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* ERP Content */
+.erp-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.erp-image {
+    flex: 1;
+    min-width: 250px;
+}
+
+.erp-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.erp-text {
+    flex: 1;
+    padding-left: 40px;
+    min-width: 250px;
+}
+
+.erp-text h3 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.erp-text p {
+    font-size: 16px;
+    color: #1b1a1a;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* ERP Logos Section */
+.erp-logos {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.erp-logos img {
+    max-width: 80px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .erp-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .erp-text {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .erp-logos {
+        justify-content: center;
+    }
+}
+
+/*enterprise productive application design*/
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Productivity Section */
+.productivity-section {
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+}
+
+.productivity-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.productivity-container h2 {
+    color: #1c1c1e;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Productivity Content */
+.productivity-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.productivity-image {
+    flex: 1;
+    min-width: 250px;
+}
+
+.productivity-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.productivity-text {
+    flex: 1;
+    padding-left: 40px;
+    min-width: 250px;
+}
+
+.productivity-text h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.productivity-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Productivity Logos Section */
+.productivity-logos {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.productivity-logos img {
+    max-width: 80px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .productivity-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .productivity-text {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .productivity-logos {
+        justify-content: center;
+    }
+}
+
+
+/*infracstructure service first design*/
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Infrastructure Section */
+.infrastructure-section {
+    background-image: url('infrastructure-bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.technology-overlay-1 {
+    background-image: url(../images/vv4.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.technology-overlay-1 h1 {
+    color: rgb(255, 255, 255);
+    margin-right: 100px;
+    font-size: 30px;
+    background-color: black;
+    padding: 10px 0;
+}
+
+.infrastructure-overlay h1 {
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+}
+
+/* Description Section */
+.infrastructure-description {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.infrastructure-description p {
+    font-size: 18px;
+    color: #4a4a4a;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/*infrastruce servive espace design*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container-22 {
+    /* width: 80%;
+    margin: 50px auto; */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.infrastructure-overlay-2 {
+    background-image: url('../images/server-2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.infrastructure-overlay-2 h1{
+    color: white;
+}
+
+h2 {
+    color: #1a1a1a;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 35PX;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 45%;
+    padding-right: 20px;
+}
+
+.left img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.right {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.right h3 {
+    color: #0073e6;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.right p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 16px;
+    color: #333;
+    /* margin-bottom: 10px; */
+    position: relative;
+}
+
+ul li::before {
+    content: '•';
+    color: #0073e6;
+    font-weight: bold;
+    display: inline-block;
+    width: 20px;
+    margin-left: -20px;
+}
+
+.footer-text {
+    color: #555;
+    font-size: 14px;
+}
+
+/*Data cental service design*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container-33 {
+    /* width: 80%; */
+    /* margin: 50px auto; */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1a1a1a;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left {
+    width: 45%;
+}
+
+.left img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.right {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.right p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.logos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.logos img {
+    width: 120px;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.data{
+    background-color: gray;
+}
+
+
+/*virtual machine design*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.conta {
+    /* width: 80%; */
+    /* margin: 50px auto; */
+    background-color: #fff;
+    /* border: 1px solid #ddd; */
+    /* border-radius: 8px; */
+    padding: 20px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+h2 {
+    color: #1a1a1a;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left {
+    width: 45%;
+}
+
+.left img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.right {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.right p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.right ul {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.logos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.logos img {
+    width: 100px;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/*strategy analysis design*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* .container--44 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+} */
+
+.header-44 {
+    text-align: center;
+    /* margin-bottom: 20px; */
+    padding: 30px;
+    background-color: rgb(201, 197, 197);
+}
+
+.strategy-overlay-3 {
+    background-image: url('../images/s-analysis.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.strategy-overlay-3 h1{
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+.header-44 h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.header-44 p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(41, 39, 39);
+}
+
+.content-44 {
+    text-align: center;
+    padding: 30px;
+}
+
+.content-44 h2 {
+    font-size: 22px;
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+.content-row-44 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container-44 {
+    flex: 1;
+    text-align: center;
+}
+
+.image-container-44 img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-container-44 {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.text-container-44 p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+/*Manage IT design*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container-55 {
+    /* width: 90%; */
+    /* margin: 0 auto; */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.managed-overlay-3 {
+    background-image: url('../images/manged.jpg'); /* Dark overlay */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.managed-overlay-3 h1 {
+    color: white;
+    padding-bottom: 8rem;
+}
+
+.content-row-55 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.image-container-55 {
+    flex: 1;
+    text-align: center;
+}
+
+.image-container-55 img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-container-55 {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.text-container-55 h2 {
+    font-size: 20px;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-container-55 p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+/*managed last images design*/
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.service-section-66 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.service-box-66 {
+    text-align: center;
+    width: 30%;
+}
+
+.service-box-66 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.service-box-66 a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 20px;
+    transition: font-size 0.3s ease; /* Smooth transition */
+}
+
+.service-box-66 a:hover {
+    font-size: 24px; /* Font size on hover */
+}
+
+/*Manged IT Drop down content*/
+
+
+
+
+
+
+
+
+
+/*Managed IT design*/
+.it-c-overlay-1 {
+    background-image: url('../images/IT-C.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.it-c-overlay-1 h1{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 35px;
+}
+
+.onsite-overlay-1 {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.remote-overlay-1 {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*managed it main page images side design*/
+
+.onsite-section {
+    background-image: url('../images/onsite.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.onsite-section h1 {
+    color: white;
+    background-color: black;
+    padding: 10px;
+    font-size: 33px;
+}
+
+.remote-section {
+    background-image: url('../images/remote-it.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.remote-section h1 {
+    color: white;
+    font-size: 34px;
+    background-color: black;
+    padding: 10px;
+}
+
+.it-section {
+    background-image: url('infrastructure-bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/*It consultancy design*/
+.container-77 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+}
+
+.image-section-77 img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-section-77 {
+    max-width: 400px;
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.text-section-77 p {
+    font-size: 16px;
+}
+
+/*remote it support design*/
+.container-88 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.image-section-88 img {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-section-88 {
+    max-width: 600px;
+    margin-left: 30px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.text-section-88 p {
+    margin-bottom: 17px;
+}
+
+/*on site main first design*/
+.container-99 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px;
+}
+
+.image-section-99 img {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.text-section-99 {
+    max-width: 600px;
+    padding-left: 20px;
+}
+
+.text-section-99 p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/*Enterprise technology design*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container-91 {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 27px;
+    background-color: white;
+}
+.heading {
+    text-align: left;
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(41, 54, 70);
+}
+.content-91 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+.image-91 {
+    flex: 1;
+    max-width: 500px;
+}
+.image-91 img {
+    width: 100%;
+    border-radius: 8px;
+}
+.text-91 {
+    flex: 2;
+}
+.text-91 p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #232222;
+    margin-bottom: 20px;
+    
+}
+.text-91 h3 {
+    font-size: 17px;
+    color: #34495e;
+    margin-bottom: 5px;
+}

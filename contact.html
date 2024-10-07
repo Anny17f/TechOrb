@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- for social media icons -->
+</head>
+
+
+    <!--Navigation bar-->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>TechOrb Solutions</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+
+                        <li class="dropdown">
+                            <a href="about.html">About</a>
+                            <div class="about-dropdown-content">
+                                <a href="about.html">About Us</a>
+                                <a href="#">Clients</a>
+                            </div>
+                        </li>
+
+                    <li class="dropdown">
+                        <a href="index.html ">Services</a>
+                        <div class="services-dropdown-content">
+                            <a href="./services/Enterprise-security.html">Enterprise Security</a>
+                            <a href="./services/Enterprise-technology.html">Enterprise Technology</a>
+                            <a href="./services/Infrastructure-services.html">Infrastructure Services</a>
+                            <a href="./services/Managed-it-services.html">Managed IT Services</a>
+                            <div class="services-dropdown-content">
+                                <a href="./services/Managed-IT-inner-info/IT-consultancy.html" id="">IT Consultancy</a>
+                                <a href="./services/Managed-IT-inner-info/On-site-support.html" id="">On-site Support </a>
+                                <a href="./services/Managed-IT-inner-info/Remote-it-support.html" id="">Remote IT Support</a>
+                            </div>
+                            <a href="./services/strategy-analytics.html">Strategy Analytics</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+<body>
+
+    <!-- contact Section -->
+    <section class="infrastructure-section">
+        <div class="contact-overlay-1">
+            <h1>CONTACT</h1>
+        </div>
+    </section>
+
+
+    <div class="container-c">
+        <!-- Left side Contact Info -->
+        <div class="contact-info-c">
+            <h1>Contact Us</h1>
+            <p>We would love to speak with you.<br> Feel free to reach out using the below details.</p>
+            <h3>Get In Touch</h3>
+            <div class="contact-details-c">
+                <p><i class="fas fa-phone-alt"></i> +234-999-999-9999</p>
+                <p><i class="fas fa-envelope"></i> TechOrbITSolutions.com</p>
+            </div>
+            <div class="social-media">
+                <p>Follow Us On</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f" alt=""></i></a>
+                    <a href="#"><i class="fab fa-twitter" alt="" ></i></a>
+                    <a href="#"><i class="fab fa-instagram" alt=""></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right side Contact Form -->
+        <div class="form-container">
+            <h2>Fill out the form below<br> and we will contact you<br> as soon as possible!</h2>
+            <form action="#">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name <span>*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your email <span>*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label for="phone">Phone Number <span>*</span></label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group full-width">
+                    <label for="industry">Industry</label>
+                    <select id="industry" name="industry">
+                        <option value="healthcare">Healthcare</option>
+                        <option value="Transportation & Logistics">Transportation & Logistics</option>
+                        <option value="Trading & Manufacturing">Trading & Manufacturing</option>
+                        <option value="Financial & Insurance Services">Financial & Insurance Services</option>
+                        <option value="Customer & Retail">Customer & Retail</option>
+                        <option value="Construction Technology">Construction Technology</option>
+                        <option value="Media, and Telecoms">Media, and Telecoms</option>
+                        <option value="Oil & Gas, and Energy">Oil & Gas, and Energy</option>
+                        <option value="Education">Education</option>
+
+                        <!-- Add more industries if needed -->
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <label for="business-need">Business Need</label>
+                    <select id="business-need" name="business-need">
+                        <option value="cyber-security">Managed Cyber Security</option>
+                        <option value="Disaster Recovery and Backup">Disaster Recovery and Backup</option>
+                        <option value="ERP">ERP</option>
+                        <option value="remote-it-support">Remote IT Support</option>
+                        <option value="on-site-it-support">On Site IT Support</option>
+                        <option value="it-consultancy">IT Consultancy</option>
+                        <option value="productivity-apps">Productivity Apps</option>
+                        <option value="audit-automation">Audit & Automation</option>
+                        <option value="data-center-services">Data Center Services</option>
+                        <option value="business-intelligence">Business Intelligence</option>
+                        <option value="espace">eSpace</option>
+                        <!-- Add more business needs if needed -->
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Message"></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section company-info">
+                <img src="TechOrb-logo.png" alt="TechOrb Logo" class="logo">
+                <address>
+                     <br>
+                     <br>
+                    Lagos, Nigeria.
+                </address>
+                <a href="mailto:solutions@netcomafrica.com">TechOrbITSolutions.com</a> <br>
+                <a href="tel:+23412718888">+234.8.8888.8888</a>
+            </div>
+            <div class="footer-section navigation">
+                <h4>NAVIGATION</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    
+                    <li><a href="#">News</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-section services">
+                <h4>SERVICES</h4>
+                <ul>
+                    <li><a href="./services/Enterprise-security.html">Enterprise Security</a></li>
+                    <li><a href="./services/Enterprise-technology.html">Enterprise Technology</a></li>
+                    <li><a href="./services/Infrastructure-services.html">Infrastructure Services</a></li>
+                    <li><a href="./services/Managed-it-services.html">Managed IT Services</a></li>
+                    <li><a href="./services/strategy-analytics.html">Strategy Analytics</a></li>
+                </ul>
+            </div>
+            <div class="footer-section certifications">
+                <img src="tl9000-logo.png" alt="Certifications" class="certifications-logo">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <!-- <div class="social-media">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div> -->
+            <!-- <p>© 2020 Netcom Africa Limited. All rights reserved. | <a href="#">Terms & Conditions</a></p> -->
+        </div>
+        <p class="last-p">© 2024 TechOrbITSolutions Limited. All rights reserved. | <a href="#">Terms & Conditions</a></p>
+    </footer>
+
+</body>
+</html>
