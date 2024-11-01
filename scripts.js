@@ -25,44 +25,6 @@ addEventListener("click", () => {
     navMenu.classList.remove("active")
 }))
 
-    //Contact Form Validation
-    // const contactForm = document.querySelector('form');
-    // const nameInput = document.querySelector('input[name="name"]');
-    // const emailInput = document.querySelector('input[name="email"]');
-    // const messageInput = document.querySelector('textarea[name="message"]');
-
-    // if (contactForm) {
-    //     contactForm.addEventListener('submit', (e) => {
-    //         let valid = true;
-
-    //         // Name validation
-    //         if (nameInput.value.trim() === '') {
-    //             alert('Please enter your name.');
-    //             valid = false;
-    //         }
-
-    //         // Email validation
-    //         const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-    //         if (!emailInput.value.match(emailPattern)) {
-    //             alert('Please enter a valid email address.');
-    //             valid = false;
-    //         }
-
-    //         // Message validation
-    //         if (messageInput.value.trim() === '') {
-    //             alert('Please enter a message.');
-    //             valid = false;
-    //         }
-
-    //         // Prevent form submission if validation fails
-    //         if (!valid) {
-    //             e.preventDefault();
-    //         } else {
-    //             alert('Thank you! Your message has been sent.');
-    //             contactForm.reset(); // Clear form after submission
-    //         }
-    //     });
-    // }
 
     // Carousel functionality
     let currentSlideIndex = 0;
@@ -112,28 +74,28 @@ function showQuestionOne() {
 }
 
 //sending the input from contact to gmail
-document.querySelector('form').addEventListener('submit', async (event) => {
-    event.preventDefault(); // Prevent form from refreshing the page
+// document.querySelector('form').addEventListener('submit', async (event) => {
+//     event.preventDefault(); // Prevent form from refreshing the page
     
-    const formData = new FormData(event.target);
-    const data = Object.fromEntries(formData.entries());
+//     const formData = new FormData(event.target);
+//     const data = Object.fromEntries(formData.entries());
 
-    try {
-        const response = await fetch('http://localhost:3000/send-email', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data),
-        });
-        if (response.ok) {
-            alert('Your message has been sent successfully!');
-        } else {
-            alert('There was a problem sending your message.');
-        }
-    } catch (error) {
-        console.error('Fetch error:', error);
-        alert('There was a problem sending your message.');
-    }
-});
+//     try {
+//         const response = await fetch('http://localhost:3000/send-email', {
+//             method: 'POST',
+//             headers: { 'Content-Type': 'application/json' },
+//             body: JSON.stringify(data),
+//         });
+//         if (response.ok) {
+//             alert('Your message has been sent successfully!');
+//         } else {
+//             alert('There was a problem sending your message.');
+//         }
+//     } catch (error) {
+//         console.error('Fetch error:', error);
+//         alert('There was a problem sending your message.');
+//     }
+// });
 
 
 //********
