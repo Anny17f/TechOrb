@@ -11,44 +11,79 @@
 
 
     <!--Navigation bar-->
-    <header class="navbar">
+    <!-- <header class="navbar2">
         <div class="container">
             <div class="logo">
-                <h1>TechOrb Solutions</h1>
+                <h1>TechOrb IT Solution</h1>
             </div>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+            <nav class="navbar">
+                    
+                <div class="navbar-links">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
 
-                        <li class="dropdown">
+                        <li class="services-dropdown">
                             <a href="about.html">About</a>
-                            <div class="about-dropdown-content">
-                                <a href="about.html">About Us</a>
+                            <div class="services-dropdown-content">
+                                <a href="about.html">About Us<i class="down"></i></a>
                                 <a href="#">Clients</a>
                             </div>
                         </li>
 
-                    <li class="dropdown">
-                        <a href="index.html ">Services</a>
-                        <div class="services-dropdown-content">
-                            <a href="./services/Enterprise-security.html">Enterprise Security</a>
-                            <a href="./services/Enterprise-technology.html">Enterprise Technology</a>
-                            <a href="./services/Infrastructure-services.html">Infrastructure Services</a>
-                            <a href="./services/Managed-it-services.html">Managed IT Services</a>
+                        <li class="services-dropdown"> <a href="index.html">Services<i class="down"></i> </a>
+                            
                             <div class="services-dropdown-content">
-                                <a href="./services/Managed-IT-inner-info/IT-consultancy.html" id="">IT Consultancy</a>
-                                <a href="./services/Managed-IT-inner-info/On-site-support.html" id="">On-site Support </a>
-                                <a href="./services/Managed-IT-inner-info/Remote-it-support.html" id="">Remote IT Support</a>
+                                    <a href="services/Enterprise-security.html" id="">Enterprise Security</a>
+                                    <a href="services/Enterprise-technology.html" id="">Enterprise Technology</a>
+                                    <a href="services/Infrastructure-services.html" id="">Infrastructure Services</a>
+                                    <a href="services/Managed-it-services.html" id="">Managed IT Services</a>
+                                    <a href="services/strategy-analytics.html" id="">Strategy Analytics</a>
                             </div>
-                            <a href="./services/strategy-analytics.html">Strategy Analytics</a>
-                        </div>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+                         </li>
+                         
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            
+                <a href="#" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>     
             </nav>
         </div>
-    </header>
+    </header> -->
 
+    <header>
+        <nav class="navbar">
+          <a href="#" class="nav-branding">TechOrb</a>
+    
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+    
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="" class="nav-link">Services</a>
+              </li>
+    
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>   
+          </ul>
+    
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+    
+        </nav>
+      </header>
     
 <body>
 
@@ -83,7 +118,7 @@
         <!-- Right side Contact Form -->
         <div class="form-container">
             <h2>Fill out the form below<br> and we will contact you<br> as soon as possible!</h2>
-            <form action="#">
+            <form action="/send-email" method="POST">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name">Your Name <span>*</span></label>
@@ -189,6 +224,9 @@
         </div>
         <p class="last-p">© 2024 TechOrbITSolutions Limited. All rights reserved. | <a href="#">Terms & Conditions</a></p>
     </footer>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="scripts.js"></script>
+    
+    
 </body>
 </html>
