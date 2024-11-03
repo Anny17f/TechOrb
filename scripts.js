@@ -61,6 +61,7 @@ addEventListener("click", () => {
     showSlide(currentSlideIndex);
 });
 
+
 // Function to show the second question and hide the first one
 function showQuestionTwo() {
     document.getElementById('question1').style.display = 'none';
@@ -98,4 +99,26 @@ function showQuestionOne() {
 // });
 
 
-//********
+
+document.addEventListener("DOMContentLoaded", function() {
+    const navbarLinks = document.querySelector('.navbar-links');
+    const hamburger = document.querySelector('.hamburger');
+    let lastScrollPosition = 0;
+
+    // Toggle mobile menu
+    hamburger.addEventListener('click', () => {
+        navbarLinks.classList.toggle('open');
+    });
+
+    // Auto-close the dropdown on scroll
+    window.addEventListener('scroll', function() {
+        let currentScrollPosition = window.scrollY;
+
+        // Close the menu if user scrolls down
+        if (currentScrollPosition > lastScrollPosition) {
+            navbarLinks.classList.remove('open');
+        }
+        lastScrollPosition = currentScrollPosition;
+    });
+});
+
